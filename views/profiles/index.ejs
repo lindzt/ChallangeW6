@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+<div class="container mt-5">
+
+    <div>
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>ID</th>
+                <th>User Name</th>
+                <th>Action</th>
+                <th>Show Biodata</th>
+                <th>Show History</th>
+            </tr>
+        <% user_games.forEach(ug=> { %>
+            <tr>
+                <td><%= ug.id %></td>
+                <td><%= ug.username %></td>
+                <td>
+                    <a href="/show/<%= ug.id %>" class="btn btn-warning">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </a>
+                    <a href="/edit/<%= ug.id %>" class="btn btn-primary">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                    <a href="/api/profile/delete/<%= ug.id %>" class="btn btn-danger">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="/showhis/<%= ug.id %>" class="btn btn-warning">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="/showbio/<%= ug.id %>" class="btn btn-warning">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </a> 
+                </td>
+            </tr>
+            <% }) %>
+        </table>
+    </div>
+
+</div>
+
+
+
+<%- include('../partials/footer') %>

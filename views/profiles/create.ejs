@@ -1,0 +1,57 @@
+<%- include('../partials/header') %>
+<div class="container mt-5">
+
+
+    <form method="POST" id="createProfileForm" action="/api/profile">
+        <div>
+            <label for="username">username</label>
+            <input 
+                type="text" 
+                name="username" 
+                placeholder="Input username"
+                class="form-control"> 
+            <label for="password">password</label>
+            <input 
+                type="text" 
+                name="password" 
+                placeholder="Input password"
+                class="form-control"> 
+        
+            <label for="date_of_birth">date of birth</label>
+            <input 
+                type="text" 
+                name="date_of_birth" 
+                placeholder="Input date_of_birth"
+                class="form-control"> 
+        
+            <label for="place_of_birth">place of birth</label>
+            <input 
+                type="text" 
+                name="place_of_birth" 
+                placeholder="Input place_of_birth"
+                class="form-control"> 
+       
+            <label for="hobby">hobby</label>
+            <input 
+                type="text" 
+                name="hobby" 
+                placeholder="Input hobby"
+                class="form-control"> 
+        
+            <label for="score">score</label>
+            <input 
+                type="text" 
+                name="score" 
+                placeholder="Input score"
+                class="form-control"> 
+        </div>
+
+
+        <button type="submit" class="btn btn-info">Save</button>
+    </form>
+
+</div>
+
+
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,34 @@
+<%- include('../partials/header') %>
+<div class="container mt-5">
+
+    <div>
+        <table class="table table-hover table-striped">
+            <tr>
+                <td>ID</td>
+                <td><%= user_games.id %></td>
+            </tr>
+            <tr>
+                <td>UserName</td>
+                <td><%= user_games.username %></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><%= user_games.password %></td>
+            </tr>
+            <tr>
+                <td>Create Date</td>
+                <td><%= user_games.createdAt %></td>
+            </tr>
+            <tr>
+                <td>Last Updated</td>
+                <td><%= user_games.updatedAt %></td>
+            </tr> 
+ 
+        </table>
+    </div>
+
+</div>
+
+
+
+<%- include('../partials/footer') %>

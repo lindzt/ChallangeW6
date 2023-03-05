@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+<div class="container mt-5">
+
+    <div>
+        <table class="table table-hover table-striped">
+            <tr>
+                <td>ID</td>
+                <td><%= user_game_histories.id %></td>
+            </tr>
+            <tr>
+                <td>SCORE</td>
+                <td><%= user_game_histories.score %></td>
+            </tr>
+            <tr>
+                <td>Last Played</td>
+                <td><%= user_game_histories.last_played %></td>
+            </tr>
+ 
+        </table>
+    </div>
+
+</div>
+
+
+
+<%- include('../partials/footer') %>

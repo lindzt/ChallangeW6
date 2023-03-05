@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+    <div class="container mt-5">
+
+ 
+
+                <form method="POST" id="createProfileForm" action="/api/profile/edit">
+                    <input type="hidden" name="id" value="<%= user_games.id %>">
+                    <div>
+                        <label for="name">Username</label>
+                        <input 
+                            type="text" 
+                            name="username" 
+                            placeholder="Input profile username" 
+                            class="form-control"
+                            value="<%= user_games.name %>">
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Save</button>
+                    <a href="/" class="btn btn-warning">Cancel</a>
+                </form>
+
+    </div>
+
+
+
+<%- include('../partials/footer') %>
